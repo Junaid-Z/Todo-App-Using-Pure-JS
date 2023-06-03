@@ -113,3 +113,19 @@
     transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     outline: none;
 }
+
+@media only screen and (max-width:800px) {
+    html {
+        font-size: .8rem;
+    }
+
+    #todoApp {
+        flex-direction: column;
+    }
+
+    .sideBar {
+        width: 100%;
+        min-width: none;
+        max-width: none;
+    }
+}
