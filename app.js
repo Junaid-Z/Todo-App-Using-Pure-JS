@@ -42,6 +42,7 @@ function createTodo(todoText) {
             input.remove()
             todoDiv.innerHTML = temp
             cancelButton.replaceWith(editButton)
+            confirmButton.replaceWith(deleteButton)
         }
         //also replace edit button with cancel button
         editButton.replaceWith(cancelButton)
@@ -57,6 +58,7 @@ function createTodo(todoText) {
             todoDiv.innerHTML = newValue;
             //replace confirm button back with delete button
             confirmButton.replaceWith(deleteButton)
+            cancelButton.replaceWith(editButton)
         }
         //replace delete button with confirm button
         deleteButton.replaceWith(confirmButton)
